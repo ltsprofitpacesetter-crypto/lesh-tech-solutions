@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         // 12. Contact Info
         else if (text.includes('contact') || text.includes('phone') || text.includes('whatsapp') || text.includes('call') || text.includes('touch')) {
-            response = "You can reach us directly at 079 071 9568 or via WhatsApp. You can even chat with our founder, Leshilo Mogalatjane Tetelo, directly!";
+            response = "You can reach us directly at 079 071 9568, via WhatsApp, or email us at info@leshtechsolutions.com. You can even chat with our founder, Leshilo Mogalatjane Tetelo, directly!";
         }
         // 13. About the company & Founder
         else if (text.includes('who') || text.includes('about') || text.includes('lesh') || text.includes('founder')) {
