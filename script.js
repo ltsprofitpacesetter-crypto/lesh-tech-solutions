@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '.section-header', 
         '.about-grid', 
         '.service-card', 
+        '.portfolio-card',
         '.feature-item', 
         '.step', 
         '.value-card', 
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Add staggered delay to grid items
             if (el.classList.contains('service-card') || 
+                el.classList.contains('portfolio-card') ||
                 el.classList.contains('feature-item') || 
                 el.classList.contains('step') || 
                 el.classList.contains('value-card')) {
@@ -166,6 +168,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // 2. Services Summary / What do you provide?
         else if (text.includes('provide') || text.includes('offer') || text.includes('services') || text.includes('what do you do')) {
             response = "We provide a range of digital solutions including Web Development, Mobile App Development, AI Solutions, and Business Automation. Which one would you like to know more about?";
+        }
+        // 2.5 Portfolio / Projects
+        else if (text.includes('portfolio') || text.includes('projects') || text.includes('show') || text.includes('work') || text.includes('done') || text.includes('example')) {
+            response = "We've worked on some exciting projects! 🚀 One of our latest is RM Pro Films (https://rmpro-films.co.za), a professional video production website. You can see more in our Portfolio section!";
         }
         // 3. Website Specifics & Definition
         else if (text.includes('website') || text.includes('web') || text.includes('design')) {
