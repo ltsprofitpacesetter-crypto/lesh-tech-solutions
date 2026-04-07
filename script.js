@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.feature-item', 
         '.step', 
         '.value-card', 
+        '.pricing-card',
+        '.service-other-card',
         '.cta-content'
     ];
 
@@ -72,6 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.classList.contains('portfolio-card') ||
                 el.classList.contains('feature-item') || 
                 el.classList.contains('step') || 
+                el.classList.contains('pricing-card') ||
+                el.classList.contains('service-other-card') ||
                 el.classList.contains('value-card')) {
                 const delay = (index % 3) + 1; // Stagger 1, 2, 3
                 el.classList.add(`reveal-delay-${delay}`);

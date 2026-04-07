@@ -1133,3 +1133,221 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
+/* Pricing Section Styles */
+.pricing {
+    background-color: #fcfcfc;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    border-color: #ddd;
+}
+
+.pricing-card.popular {
+    border: 2px solid #000;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.pricing-card.popular:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pricing-header h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.price {
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.price .currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    vertical-align: top;
+    margin-right: 2px;
+}
+
+.price .amount {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.price .plus {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features-list {
+    margin-bottom: 2.5rem;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.features-list li {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.features-list li i {
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.btn-pricing {
+    width: 100%;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-pricing:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-pricing-primary {
+    background: #000;
+    color: #fff;
+}
+
+.btn-pricing-primary:hover {
+    background: #333;
+    border-color: #333;
+}
+
+.pricing-footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: #666;
+}
+
+.pricing-footer a {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Other Services Styles */
+.other-services {
+    background-color: #fff;
+}
+
+.services-other-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.service-other-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 3.5rem;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.service-other-card:hover {
+    border-color: #000;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03);
+}
+
+.service-other-icon {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.service-other-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.service-other-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+}
+
+.btn-service {
+    background: #000;
+    color: #fff;
+    padding: 1rem 2.5rem;
+}
+
+.btn-service:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 992px) {
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+    .pricing-card.popular:hover {
+        transform: translateY(-10px);
+    }
+    .services-other-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .price .amount {
+        font-size: 2.8rem;
+    }
+    .service-other-card {
+        padding: 2.5rem 1.5rem;
+    }
+}
